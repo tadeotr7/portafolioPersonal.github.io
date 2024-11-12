@@ -93,19 +93,41 @@ h1 {
 h1 strong {
   color: #026fff;
 }
-h2 {
-  color: #026fff;
-  text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  margin-bottom: 40px;
+.FontPage{
+  font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.name {
+  font-family: 'Arial', sans-serif; /* Elige una fuente similar, ajusta según tus necesidades */
+  font-weight: 700; /* Bold */
+  font-size: 60px; /* Ajusta el tamaño según sea necesario */
+  color: #FFFFFF; /* El color de la fuente */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto opcional */
+}
+.yellowFont{
+  color: #bda65c;
+}
+.title {
+  font-size: 30px;
+  font-size: 1.8rem;
+  /* Efecto de texto dorado/metálico */
+  background: linear-gradient(to bottom, #c6a355 0%, #e5cc85 50%, #a17c37 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .hero {
   height: 300px;
   /* background-image: url('../images/hero.jpg'); */
-  background-color: #1b2127;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.947), rgba(0, 0, 0, 0.753));
+  color: white;
+  padding: 4rem 2rem;
   /* background-size: 500px 300px; */
   /* background-repeat: no-repeat; */
   /* background-position-x: right; */
@@ -117,7 +139,7 @@ h2 {
 
 .hero-image{
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 
@@ -191,8 +213,9 @@ h2 {
 }
 
 .header{
-  background-color: #000000;
+  background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
   color: white;
+  padding: 1rem 1rem;
   display: flex;
   height: 70px;
   align-items: center;
@@ -420,16 +443,9 @@ figure {
     padding: 0 1em;
   }
   .hero {
-    height: auto;
-    position: relative;
-    overflow: hidden;
-    padding: 2em;
   }
   .hero-image {
-    border-radius: 50%;
-    object-fit: cover;
     position: relative;
-   left: 35px;
     
   }
   h1 {

@@ -1,272 +1,230 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Portafolio personal de Tadeo Juárez – Experto en AR/VR y soluciones industriales con IA." />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tadeo Juarez – Soluciones Inmersivas e Industriales</title>
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro|Inter" rel="stylesheet" />
-  <!-- Hoja de estilos principal -->
-  <link rel="stylesheet" href="css/estilos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Tadeo Juárez - Experto en AR/VR y soluciones industriales con IA">
+  <title>Tadeo Juárez - Soluciones Inmersivas e Industriales</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Botón menú móvil -->
-  <button 
-    aria-label="Menú móvil" 
-    class="icon-menu burger-button" 
-    id="burger-menu">
-  </button>
-
-  <!-- Encabezado principal -->
-  <header class="header">
+  <!-- Top Bar -->
+  <header class="top-bar">
     <div class="container">
-      <!-- Branding o Logo -->
-      <nav aria-label="Principal">
-        <p class="title">Tadeo</p>
-      </nav>
-      <!-- Menú principal -->
-      <nav class="menu" aria-label="Menú de navegación principal">
-        <ol>
-          <li><a href="#portafolio">Portafolio</a></li>
-          <li><a href="#eventos">Experiencia</a></li>
-          <li><a href="#contacto">Trabajemos juntos</a></li>
-        </ol>
-      </nav>
+      <h1>TADEO JUÁREZ</h1>
+      <div class="top-bar-right">
+        <span class="edit-time">Editado recientemente</span>
+        <button class="share-btn">Compartir</button>
+      </div>
     </div>
   </header>
 
-  <!-- Sección Hero / Presentación -->
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="container hero-layout">
-      <div>
-        <p class="FontPage">Bienvenido a mi mundo creativo.</p>
-        <h1 class="name">Soy Tadeo Juárez</h1>
-        <p class="FontPage">Desarrollo soluciones inmersivas y AI industriales para potenciar el futuro.</p>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          </svg>
+        </div>
+        <h2>TADEO JUÁREZ</h2>
+        <h3>Desarrollo soluciones inmersivas y AI industriales</h3>
+        <p>
+          Bienvenido a mi mundo creativo. He participado en proyectos de AR/VR y robótica para grandes eventos 
+          como <strong>Hannover Mess</strong> y <strong>Famex</strong>. 
+          Me entusiasma la Realidad Aumentada y la optimización de soluciones industriales con IA.
+        </p>
       </div>
-      <div>
-        <img 
-          class="hero-image" 
-          src="images/fotoPefil.jpg" 
-          width="220" 
-          height="250" 
-          alt="Retrato de Tadeo Juarez" />
+      <div class="hero-image">
+        <img src="images/FotoPerfil.jpg" alt="Tadeo Juarez">
       </div>
     </div>
   </section>
 
-  <!-- Sección de Portafolio -->
-  <section id="portafolio" class="portfolio" aria-label="Portafolio">
+  <!-- Stats Section -->
+  <section class="stats">
     <div class="container">
-      <h2>Proyectos Destacados</h2>
+      <div class="stat-item">
+        <h4>5+</h4>
+        <p>Años de Experiencia</p>
+      </div>
+      <div class="stat-item">
+        <h4>10+</h4>
+        <p>Proyectos Completados</p>
+      </div>
+      <div class="stat-item">
+        <h4>3+</h4>
+        <p>Clientes Satisfechos</p>
+      </div>
+    </div>
+  </section>
 
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Avión AR con Datos IoT</h3>
-          <p class="project-course">Unity / ARCore / ARKit</p>
-          <p class="project-date">
-            <small><strong>Fecha:</strong> 24/04/2018</small>
+  <!-- Skills Section -->
+  <section class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-tabs">
+        <button class="tab active" data-tab="expertise">Expertise</button>
+        <button class="tab" data-tab="software">Software</button>
+        <button class="tab" data-tab="language">Language</button>
+      </div>
+      
+      <div class="skills-content active" id="expertise">
+        <span class="skill-tag">AR/VR</span>
+        <span class="skill-tag">IoT Industrial</span>
+        <span class="skill-tag">Gestión de Equipos</span>
+        <span class="skill-tag">Agile / Scrum</span>
+      </div>
+      
+      <div class="skills-content" id="software">
+        <span class="skill-tag">Unity (ARCore/ARKit)</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Python</span>
+      </div>
+      
+      <div class="skills-content" id="language">
+        <span class="skill-tag">Español (Nativo)</span>
+        <span class="skill-tag">Inglés (Avanzado)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <span class="featured-label">Featured</span>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>Avión AR con Datos IoT</h3>
+          <p class="project-tags">Unity / ARCore / ARKit</p>
+          <p class="project-desc">
+            Un prototipo de avión a escala que combina Realidad Aumentada y sensores IoT para monitorear giros y desplazamientos en tiempo real.
           </p>
-          <p class="project-url">
-            <small>
-              <strong>Ver en:</strong>
-              <a href="https://www.facebook.com/nctechmx/photos/a.262425157293652/1055122741357219/?type=3&theater" target="_blank">
-                Facebook
-              </a>
-            </small>
-          </p>
-          <p class="project-description">
-            Un prototipo de avión a escala que combina Realidad Aumentada y sensores IoT para monitorear giros y desplazamientos en tiempo real.  
-            Un paso firme hacia la Industria 4.0, diseñado para inspirar la adopción de tecnologías inmersivas en México.
-          </p>
-        </div>
-        <figure>
-          <video 
-            width="400" 
-            height="300" 
-            class="videoPoryeto01" 
-            controls 
-            poster="images/avion-poster.jpg">
+          <video controls poster="images/avion-poster.jpg">
             <source src="videos/avion.mp4" type="video/mp4">
-            Tu navegador no soporta el elemento de video.
           </video>
-        </figure>
-      </article>
-
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Automóvil AR con Datos IoT</h3>
-          <p class="project-course">Unity / ARKit / C# / Node.js</p>
-          <p class="project-date">
-            <small><strong>Fecha:</strong> 09/10/2019</small>
-          </p>
-          <p class="project-url">
-            <small>
-              <strong>Ver en:</strong>
-              <a href="https://www.facebook.com/nctechmx/posts/1177398985796260" target="_blank">
-                Facebook
-              </a>
-            </small>
-          </p>
-          <p class="project-description">
-            Desarrollado para el sector automotriz en Hannover Mess 2019. Un auto a escala con sensores y actuadores que brinda datos en tiempo real mediante RA.  
-            Un primer acercamiento a Digital Twins, preparado para exhibir el potencial de la Industria 4.0 en México.
-          </p>
         </div>
-        <figure>
-          <video 
-            width="400" 
-            height="300" 
-            class="videoPoryeto01" 
-            controls 
-            poster="images/carro-poster.jpg">
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>Automóvil AR con Datos IoT</h3>
+          <p class="project-tags">Unity / ARKit / C# / Node.js</p>
+          <p class="project-desc">
+            Desarrollado para el sector automotriz en Hannover Mess 2019. Un auto a escala con sensores que brinda datos en tiempo real mediante RA.
+          </p>
+          <video controls poster="images/carro-poster.jpg">
             <source src="videos/carro.mp4" type="video/mp4">
-            Tu navegador no soporta el elemento de video.
           </video>
-        </figure>
-      </article>
-    </div>
-  </section>
-
-  <div class="container">
-    <h2 class="event-list-title">Mi Trayectoria</h2>
-  </div>
-
-  <!-- Sección de Eventos / Experiencia -->
-  <section id="eventos" class="event-list" aria-label="Experiencia y eventos">
-    <div class="container">
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img 
-            class="event-image" 
-            src="images/evento1.jpg" 
-            width="500" 
-            alt="Famex Feria Aeroespacial México 2019" />
-        </figure>
-        <div class="event-detail">
-          <h3 class="event-title">Famex Feria Aeroespacial México 2019</h3>
-          <p class="event-description">
-            Un evento aeronáutico de talla mundial que convoca a 36 países.  
-            Presenté soluciones de RA y robótica para exhibir la Industria 4.0 al sector aeroespacial.
-          </p>
-          <a class="event-url" href="https://www.facebook.com/nctechmx/posts/1055123584690468" target="_blank">
-            Ver publicación
-          </a>
         </div>
-      </article>
-
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img 
-            class="event-image" 
-            src="images/evento2.jpg" 
-            width="500" 
-            alt="Hannover Mess 2019" />
-        </figure>
-        <div class="event-detail">
-          <h3 class="event-title">Hannover Mess 2019</h3>
-          <p class="event-description">
-            El mayor escenario de Industria 4.0 a nivel global.  
-            Compartí proyectos de realidad extendida para el sector industrial, impulsando la innovación en México.
-          </p>
-          <a class="event-url" href="https://www.facebook.com/nctechmx/posts/1177398985796260" target="_blank">
-            Ver publicación
-          </a>
-        </div>
-      </article>
-
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img 
-            class="event-image" 
-            src="images/evento4.jpg" 
-            width="500" 
-            alt="Evento Aeroespacial UNAQ 2018" />
-        </figure>
-        <div class="event-detail">
-          <h3 class="event-title">Encuentro Aeroespacial UNAQ 2018</h3>
-          <p class="event-description">
-            Un foro para explorar soluciones de Industria 4.0 en la Universidad Aeronáutica de Querétaro.  
-            Expuse los beneficios de la RA en el sector aeroespacial y sus retos a futuro.
-          </p>
-          <a class="event-url" href="https://www.facebook.com/nctechmx/posts/785035088365987" target="_blank">
-            Ver publicación
-          </a>
-        </div>
-      </article>
-
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img 
-            class="event-image" 
-            src="images/evento3.jpg" 
-            width="500" 
-            alt="Evento Automotriz UPQ 2018" />
-        </figure>
-        <div class="event-detail">
-          <h3 class="event-title">Jornada Automotriz UPQ 2018</h3>
-          <p class="event-description">
-            Ante más de 200 empresas del sector, presenté “Industria Automotriz 4.0” en la Universidad Politécnica de Querétaro, impulsando la adopción de RA y sistemas inteligentes en el rubro.
-          </p>
-          <a class="event-url" href="https://www.facebook.com/UPQoficial/posts/10156488791882964" target="_blank">
-            Ver publicación
-          </a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- Sección de Contacto -->
-  <section id="contacto" class="contact" aria-label="Contacto">
-    <div class="container contact-layout">
-      <!-- Formulario desactivado, se puede habilitar según necesidades -->
-      <form action="/suscripcion/" class="form-email" aria-label="Formulario de contacto"></form>
-      <div class="social" aria-label="Redes sociales">
-        <a 
-          href="https://api.whatsapp.com/send?phone=524423954101&amp;text=%C2%BFCreamos%20algo%20juntos?" 
-          class="social-link whatsapp" 
-          aria-label="WhatsApp">
-        </a>
-        <a 
-          href="https://www.instagram.com/realityaugmentedmx/" 
-          class="social-link instagram" 
-          aria-label="Instagram">
-        </a>
       </div>
     </div>
   </section>
 
-  <!-- Pie de página -->
-  <footer class="footer">
+  <!-- Events Section -->
+  <section class="events">
     <div class="container">
-      <p>&copy; 2023 Tadeo Juárez. Impulsando la innovación industrial en México.</p>
+      <h2>Experiencia destacada</h2>
+      
+      <article class="event-card">
+        <div class="event-media">
+          <img src="images/Famex.jpg" alt="Famex 2019" class="event-image">
+        </div>
+        <div class="event-content">
+          <h3>Famex Feria Aeroespacial México 2019</h3>
+          <p class="event-description">Presenté soluciones de RA y robótica para exhibir la Industria 4.0 ante 36 países.</p>
+          <a href="https://www.facebook.com/nctechmx/posts/1055123584690468" 
+            target="_blank" 
+            class="event-link">
+            Ver publicación ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="event-card">
+        <div class="event-media">
+          <img src="images/evento2.jpg" alt="Hannover Mess 2019" class="event-image">
+        </div>
+        <div class="event-content">
+          <h3>Hannover Mess 2019</h3>
+          <p class="event-description">Compartí proyectos de realidad extendida para el sector industrial en el mayor evento de Industria 4.0.</p>
+          <a href="https://www.facebook.com/nctechmx/posts/1177398985796260" 
+            target="_blank" 
+            class="event-link">
+            Ver publicación ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="event-card">
+        <div class="event-media">
+          <img src="images/evento4.jpg" alt="Encuentro UNAQ 2018" class="event-image">
+        </div>
+        <div class="event-content">
+          <h3>Encuentro Aeroespacial UNAQ 2018</h3>
+          <p class="event-description">Expuse los beneficios de la RA en el sector aeroespacial en la Universidad Aeronáutica de Querétaro.</p>
+          <a href="https://www.facebook.com/nctechmx/posts/785035088365987" 
+            target="_blank" 
+            class="event-link">
+            Ver publicación ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="event-card">
+        <div class="event-media">
+          <img src="images/evento3.jpg" alt="Jornada UPQ 2018" class="event-image">
+        </div>
+        <div class="event-content">
+          <h3>Jornada Automotriz UPQ 2018</h3>
+          <p class="event-description">Presenté "Industria Automotriz 4.0" ante 200 empresas en la Universidad Politécnica de Querétaro.</p>
+          <a href="https://www.facebook.com/UPQoficial/posts/10156488791882964" 
+            target="_blank" 
+            class="event-link">
+            Ver publicación ↗
+          </a>
+        </div>
+      </article>
     </div>
-  </footer>
+  </section>
 
-  <!-- Scripts -->
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <div class="contact-info">
+        <h2>CONTACT AND SUPPORT</h2>
+        <p>Para soporte o retroalimentación: <a href="mailto:contacto@tadeojuarez.com">contacto@tadeojuarez.com</a></p>
+      </div>
+      <div class="social-links">
+        <h2>FOLLOW</h2>
+        <div class="social-grid">
+          <a href="https://twitter.com/tadeojuarez" target="_blank">Twitter</a>
+          <a href="https://www.instagram.com/realityaugmentedmx/" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/tadeo-juarez" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script>
-    // Responsividad del menú
-    const ipad = window.matchMedia('screen and (max-width: 767px)');
-    const menu = document.querySelector('.menu');
-    const burgerButton = document.querySelector('#burger-menu');
+    // Tabs functionality
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.skills-content');
 
-    function validation(event) {
-      if (event.matches) {
-        burgerButton.addEventListener('click', toggleMenu);
-      } else {
-        burgerButton.removeEventListener('click', toggleMenu);
-        menu.classList.remove('is-active');
-      }
-    }
-
-    function toggleMenu() {
-      menu.classList.toggle('is-active');
-    }
-
-    ipad.addListener(validation);
-    validation(ipad);
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        contents.forEach(c => c.classList.remove('active'));
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
   </script>
 </body>
 </html>
